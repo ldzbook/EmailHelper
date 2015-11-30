@@ -73,7 +73,7 @@ public class FileProcessor {
 		checkExit(fileDir);
 		try {
 			bufW = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(fileDir, true),"GBK"));
+					new FileOutputStream(fileDir, true),"UTF-8"));
 			bufW.write(logLine);
 			bufW.newLine();
 			bufW.flush();
